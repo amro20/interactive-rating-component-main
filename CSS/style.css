@@ -1,0 +1,132 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(213, 19%, 18%);
+  padding: 25px;
+  border-radius: 25px;
+  width: 380px;
+  height: 370px;
+}
+
+main .star_icon {
+  background-color: hsl(213deg 18% 23% / 96%);
+  width: 20px;
+  margin: 20px 0;
+  border-radius: 50%;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .text h3 {
+  font-size: 27px;
+  color: white;
+  font-weight: 400;
+  margin: 30px 0 10px;
+}
+
+main .text p {
+  font-size: 15px;
+  color: hsl(216, 12%, 54%);
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+main .rating {
+  display: flex;
+  flex-direction: column;
+}
+
+main .rating .nums {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .rating .nums span {
+  background-color: hsl(213deg 18% 23% / 96%);
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 10px 20px;
+  color: hsl(216, 12%, 54%);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+main .rating .nums span:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+main .rating .nums span.active {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+main .rating button {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main .rating button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+main .thanks {
+  text-align: center;
+  display: none;
+}
+
+main .thanks img {
+  width: 150px;
+  margin: 20px 0;
+}
+
+main .thanks img + p {
+  color: hsl(25, 97%, 53%);
+  padding: 5px 14px;
+  background-color: hsl(213deg 18% 23% / 96%);
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 0 auto 30px;
+}
+
+main .thanks h3 {
+  font-size: 27px;
+  color: white;
+  font-weight: 400;
+  margin: 30px 0 10px;
+}
+
+main .thanks h3 + p {
+  font-size: 15px;
+  color: hsl(216deg, 7%, 52%);
+  line-height: 1.7;
+  margin: 15px 0;
+}
